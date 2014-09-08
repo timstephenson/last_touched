@@ -2,8 +2,7 @@
 
   This script takes a list of file names as arguments. It assumes that
   spaces for files have been escaped. If one of the paths does not point to a file,
-  a message is printed to let you know what happened. The same is true if the file
-  can not be found.
+  an error message is printed. The same is true if the file cannot be found.
 
   If the spaces are not escaped, it will report that two files couldn't be found.
   The script does not attempt to handle anything that is not a file.

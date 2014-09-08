@@ -13,7 +13,7 @@ Sample Last Accessed File
 Implementations
 ---------------
 
-I've provided two implementations as requested. The first uses Node.js, and the second with Python.
+I've provided two implementations as requested. The first uses Node.js, and the second uses Python.
 
 ### Running the JS version:
 
@@ -31,7 +31,7 @@ fixtures/file_b.txt
 
 It assumes that spaces for files have been escaped. If one of the paths does not point to a file,
 a message is printed to let you know what happened. The same is true if the file
-can not be found.
+cannot be found.
 
 If the spaces are not escaped, it will report that two files couldn't be found.
 The script does not attempt to handle anything that is not a file.
