@@ -49,13 +49,12 @@ The output is slightly different:
 fixtures/file_b.txt
 ```
 
-It assumes that spaces for files have been escaped. If one of the paths does not point to a file,
-a message is printed to let you know what happened. The same is true if the file
-can not be found.
+This script takes a list of file names as arguments. It assumes that
+spaces for files have been escaped. If one of the paths does not point to a file,
+an error message is printed. The same is true if the file cannot be found.
 
 If the spaces are not escaped, it will report that two files couldn't be found.
 The script does not attempt to handle anything that is not a file.
 
-This implementation will not provide as much error information if the path does
-not lead to a file. If it is not a file it ignores it and moves to the next item
-in the list.
+This implementation will provide less error information. If it is not a file, it
+ignores it, and moves to the next item in the list.
