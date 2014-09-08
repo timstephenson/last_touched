@@ -15,7 +15,7 @@ Implementations
 
 I've provided two implementations as requested. The first uses Node.js, and the second with Python.
 
-How to run:
+=== Running the JS version:
 
 ```
 ./last_touched.js fixtures/file_b.txt fixtures/file_a.txt fixtures/file_c.txt fixtures/file
@@ -29,7 +29,14 @@ And the output:
 fixtures/file_b.txt
 ```
 
-Running the Python version is very similar:
+It assumes that spaces for files have been escaped. If one of the paths does not point to a file,
+a message is printed to let you know what happened. The same is true if the file
+can not be found.
+
+If the spaces are not escaped, it will report that two files couldn't be found.
+The script does not attempt to handle anything that is not a file.
+
+=== Running the Python version is very similar:
 
 ```
 ./last_touched.py fixtures/file_b.txt fixtures/file_a.txt fixtures/file_c.txt fixtures/file
@@ -41,3 +48,14 @@ The output is slightly different:
 -> Sorry 'fixtures/file' was not a file.
 fixtures/file_b.txt
 ```
+
+It assumes that spaces for files have been escaped. If one of the paths does not point to a file,
+a message is printed to let you know what happened. The same is true if the file
+can not be found.
+
+If the spaces are not escaped, it will report that two files couldn't be found.
+The script does not attempt to handle anything that is not a file.
+
+This implementation will not provide as much error information if the path does
+not lead to a file. If it is not a file it ignores it and moves to the next item
+in the list.

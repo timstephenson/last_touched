@@ -5,17 +5,17 @@ from datetime import datetime
 from operator import itemgetter
 
 """
-  This script assumes that spaces for files have been escaped. If the
-  path that is passed in the argulments does not point to a file,
-  a message is printed to let you know which file it has a problem with.
-  The same is true if the file can not be found.
+  This script takes a list of file names as arguments. It assumes that
+  spaces for files have been escaped. If one of the paths does not point to a file,
+  a message is printed to let you know what happened. The same is true if the file
+  can not be found.
 
   If the spaces are not escaped, it will report that two files couldn't be found.
   The script does not attempt to handle anything that is not a file.
 
-  This implementation will not provide as much error inormation if the path does
-  not lead to a file. It simply check that is represents a file and then moves to the
-  next file.
+  This implementation will not provide as much error information if the path does
+  not lead to a file. If it is not a file it ignores it and moves to the next item
+  in the list.
 """
 
 class LastTouched:
