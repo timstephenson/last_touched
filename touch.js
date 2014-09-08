@@ -1,3 +1,13 @@
+/*
+  This script assumes that spaces for files have been escaped. If the
+  path that is passed in the argulments does not point to a file,
+  a message is printed to let you know which file it has a problem with.
+  The same is true if the file can not be found.
+
+  If the spaces are not escaped, it will report that two files couldn't be found.
+  The script does not attempt to handle anything that is not a file.
+*/
+
 var fs = require('fs'),
     fileStats = [];
 

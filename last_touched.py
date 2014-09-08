@@ -4,6 +4,20 @@ import sys, os.path, time
 from datetime import datetime
 from operator import itemgetter
 
+"""
+  This script assumes that spaces for files have been escaped. If the
+  path that is passed in the argulments does not point to a file,
+  a message is printed to let you know which file it has a problem with.
+  The same is true if the file can not be found.
+
+  If the spaces are not escaped, it will report that two files couldn't be found.
+  The script does not attempt to handle anything that is not a file.
+
+  This implementation will not provide as much error inormation if the path does
+  not lead to a file. It simply check that is represents a file and then moves to the
+  next file.
+"""
+
 class LastTouched:
 
   def __init__(self, paths):
