@@ -15,7 +15,7 @@ Implementations
 
 I've provided two implementations as requested. The first uses Node.js, and the second with Python.
 
-=== Running the JS version:
+### Running the JS version:
 
 ```
 ./last_touched.js fixtures/file_b.txt fixtures/file_a.txt fixtures/file_c.txt fixtures/file
@@ -36,7 +36,7 @@ can not be found.
 If the spaces are not escaped, it will report that two files couldn't be found.
 The script does not attempt to handle anything that is not a file.
 
-=== Running the Python version is very similar:
+### Running the Python version is very similar:
 
 ```
 ./last_touched.py fixtures/file_b.txt fixtures/file_a.txt fixtures/file_c.txt fixtures/file
